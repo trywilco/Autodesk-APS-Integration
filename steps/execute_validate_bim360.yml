@@ -1,0 +1,25 @@
+id: execute_validate_bim360
+learningObjectives:
+  - Execute and validate BIM 360 workflows.
+hints:
+  - Check for proper RVT file format.
+  - Ensure the BIM 360 folder is correctly configured for monitoring.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Time to make magic happen.
+          - text: Log into your Autodesk application.
+          - text: Upload an RVT file into a monitored BIM 360 folder.
+          - text: System will detect the upload and trigger workflows.
+          - text: Verify issues in BIM 360 UI.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

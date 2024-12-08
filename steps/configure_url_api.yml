@@ -1,0 +1,25 @@
+id: configure_url_api
+learningObjectives:
+  - Configure URLs and enable required APIs.
+hints:
+  - Review API needs and only enable what's essential.
+  - Check Autodesk's documentation for URL formatting.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: It's fine-tuning time!
+          - text: Visit app settings on Autodesk Platform Services.
+          - text: Set the Callback URL to (your app url)/api/auth/callback.
+          - text: Enable all necessary APIs for optimal functionality.
+          - text: Save your configurations to sync changes.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

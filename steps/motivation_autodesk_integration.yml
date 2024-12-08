@@ -1,0 +1,35 @@
+id: motivation_autodesk_integration
+learningObjectives:
+  - Understand the value and principles of Autodesk integration.
+hints:
+  - Stay motivated by reviewing the benefits of integration.
+  - Look at real-world examples to see the success of integrations.
+startFlow:
+  do:
+    - actionId: github_commit_file
+      params:
+        file: ${Dockerfile}
+        path: webhook
+    - actionId: github_commit_file
+      params:
+        file: ${docker-compose.yml}
+        path: "."
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Welcome to this Autodesk adventure!
+          - text: "Picture this: seamless data flow between your design tools."
+          - text: Reduce manual work and potential errors—yes, please!
+          - text: By understanding OAuth and Webhooks, automate workflows.
+          - text: Increase team productivity and tackle large projects with ease.
+          - text: Let's dive in and sharpen your tech skills.
+          - text: For more motivation, check [here](https://aps.autodesk.com/success/).
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

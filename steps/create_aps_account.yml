@@ -1,0 +1,25 @@
+id: create_aps_account
+learningObjectives:
+  - Create an Autodesk Platform Services account.
+hints:
+  - Make sure to use a reliable email address.
+  - Keep track of your Autodesk credentials.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Let's set up your Autodesk account.
+          - text: Visit [Autodesk Platform Services](https://aps.autodesk.com).
+          - text: Click 'Sign Up'—quick and easy.
+          - text: Ensure email confirmation to activate your account.
+          - text: Once ready, we move to your next adventure.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

@@ -1,0 +1,25 @@
+id: autodesk_oauth_webhooks
+title: Autodesk OAuth and Webhooks Basics
+subtitle: Integrate and Automate with Autodesk Services
+description: In this quest, you'll learn the essentials of integrating with
+  Autodesk Platform Services using OAuth and Webhooks. Beginning with account
+  creation, progressing through app credential setup, to configuring and running
+  your Codespace, this journey equips you with the tools for seamless automation
+  in tackling diverse design challenges.
+level: intermediate
+duration: 3.5
+skills:
+  - OAuth Integration
+  - Autodesk Services
+  - Webhooks
+  - Automation
+  - API Management
+steps:
+  - motivation_autodesk_integration
+  - create_aps_account
+  - generate_app_credentials
+  - run_configure_codespace
+  - configure_url_api
+  - execute_validate_bim360
+type: PROMPT
+repository: https://github.com/Autodesk-Forge/forge-createwebhooks-skeleton

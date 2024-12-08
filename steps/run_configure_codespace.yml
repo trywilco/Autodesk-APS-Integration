@@ -1,0 +1,25 @@
+id: run_configure_codespace
+learningObjectives:
+  - Configure your app.
+hints:
+  - Use a text editor that highlights yaml syntax to avoid formatting errors.
+  - Check for typos in the variable names or paths.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Bring your creation to life in Codespace!
+          - text: Navigate to the root directory.
+          - text: Open `docker-compose.yml` file in your project.
+          - text: "Edit the environmental variables: CLIENT_ID and CLIENT_SECRET."
+          - text: Launch your app and witness its wonders!
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
