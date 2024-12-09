@@ -20,8 +20,8 @@ services:
       - "5000:80"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      FORGE_CLIENT_ID: 7WIqJXPgeiGa4fhGpG2dhQl7HdEZG8bpySJtjpOzP8DDOZfu
-      FORGE_CLIENT_SECRET: EIMiCRDxskNfZtpeHl9x7afLhkC07Wp2BxjzGADKeBsEGeVaSlOo3bd3pfcjZcQb
+      FORGE_CLIENT_ID: client_id
+      FORGE_CLIENT_SECRET: client_secret
       FORGE_CALLBACK_URL: http://${CODESPACE_NAME}-5000.preview.app.github.dev/api/forge/callback/oauth
       FORGE_WEBHOOK_URL: http://${CODESPACE_NAME}-5000.preview.app.github.dev/api/forge/callback/webhook
       OAUTH_DATABASE: mongodb://wilco_user:wilco_password@mongo:27017/webhook?authSource=admin
