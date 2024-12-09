@@ -14,17 +14,19 @@ startFlow:
       params:
         file: ${docker-compose.yml}
         path: "."
+    - actionId: github_commit_file
+      params:
+        file: ${devcontainer.json}
+        path: ".devcontainer"
     - actionId: bot_message
       params:
         person: lucca
         messages:
-          - text: Welcome to this Autodesk adventure!
-          - text: "Picture this: seamless data flow between your design tools."
-          - text: Reduce manual work and potential errors—yes, please!
-          - text: By understanding OAuth and Webhooks, automate workflows.
-          - text: Increase team productivity and tackle large projects with ease.
-          - text: Let's dive in and sharpen your tech skills.
-          - text: For more motivation, check [here](https://aps.autodesk.com/success/).
+          - text: Welcome to this Autodesk adventure! We're excited to have you on board as we explore the powerful integration capabilities of Autodesk's suite of tools.
+          - text: "Picture this: seamless data flow between your design tools, enabling you to work more efficiently and effectively without the hassle of manual data transfers. By automating repetitive tasks, you can reduce manual work and potential errors, allowing you to focus on creating innovative designs and solutions."
+          - text: By understanding OAuth and Webhooks, you can automate workflows and securely connect different applications, streamlining your processes. This will increase team productivity and help you tackle large projects with ease.
+          - text: With integrated tools, your team can collaborate more effectively, share information effortlessly, and manage projects more efficiently. This journey will equip you with the knowledge and skills needed to leverage Autodesk integrations to their fullest potential.
+          - text: For more motivation, check [here](https://aps.autodesk.com/). Discover success stories, best practices, and additional resources to keep you inspired and informed.
     - actionId: ready_message
       params:
         person: lucca

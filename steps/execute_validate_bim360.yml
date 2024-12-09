@@ -10,11 +10,11 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Time to make magic happen.
-          - text: Log into your Autodesk application.
-          - text: Upload an RVT file into a monitored BIM 360 folder.
-          - text: System will detect the upload and trigger workflows.
-          - text: Verify issues in BIM 360 UI.
+          - text: Time to make magic happen. We will now execute and validate BIM 360 workflows.
+          - text: Log into your Autodesk application. Ensure you have the necessary permissions to access BIM 360.
+          - text: Upload an RVT file into a monitored BIM 360 folder. This will trigger the automated workflows configured for the folder.
+          - text: System will detect the upload and trigger workflows. These workflows may include file validation, issue detection, and more.
+          - text: Verify issues in BIM 360 UI. Check the BIM 360 interface for any issues or notifications related to the uploaded file.
     - actionId: ready_message
       params:
         person: lucca

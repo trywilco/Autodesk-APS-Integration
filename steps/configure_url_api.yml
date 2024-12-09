@@ -10,11 +10,11 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: It's fine-tuning time!
-          - text: Visit app settings on Autodesk Platform Services.
-          - text: Set the Callback URL to (your app url)/api/auth/callback.
-          - text: Enable all necessary APIs for optimal functionality.
-          - text: Save your configurations to sync changes.
+          - text: It's fine-tuning time! We will configure URLs and enable the required APIs for your app.
+          - text: Visit app settings on Autodesk Platform Services. Navigate to the settings section where you can manage your app configurations.
+          - text: Set the Callback URL to (your app url)/api/auth/callback. This URL will be used for OAuth authentication callbacks.
+          - text: Enable all necessary APIs for optimal functionality. Review the APIs your app needs and enable them in the settings.
+          - text: Save your configurations to sync changes. Ensure all changes are saved to apply the new settings.
     - actionId: ready_message
       params:
         person: lucca

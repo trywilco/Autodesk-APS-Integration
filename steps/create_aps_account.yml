@@ -10,11 +10,11 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Let's set up your Autodesk account.
-          - text: Visit [Autodesk Platform Services](https://aps.autodesk.com).
-          - text: Click 'Sign Up'—quick and easy.
-          - text: Ensure email confirmation to activate your account.
-          - text: Once ready, we move to your next adventure.
+          - text: Let's set up your Autodesk account. This account will give you access to Autodesk Platform Services.
+          - text: Visit [Autodesk Platform Services](https://aps.autodesk.com). This is the official site where you can manage your Autodesk services.
+          - text: Click 'Sign Up'—quick and easy. Fill in the required information such as your name, email, and password.
+          - text: Ensure email confirmation to activate your account. Check your email for a confirmation link and click it to activate your account.
+          - text: Once ready, we move to your next adventure. With your account set up, you can now explore and integrate Autodesk services.
     - actionId: ready_message
       params:
         person: lucca
