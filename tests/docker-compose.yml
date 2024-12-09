@@ -9,7 +9,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: wilco_password
 
   webhook:
-    image: mcr.microsoft.com/dotnet/aspnet:3.1
     container_name: webhook
     build:
       context: ./webhook

@@ -14,10 +14,6 @@ startFlow:
       params:
         file: ${docker-compose.yml}
         path: "."
-    - actionId: github_commit_file
-      params:
-        file: ${devcontainer.json}
-        path: ".devcontainer"
     - actionId: bot_message
       params:
         person: lucca
