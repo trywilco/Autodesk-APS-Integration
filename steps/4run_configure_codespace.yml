@@ -11,9 +11,9 @@ startFlow:
         person: lucca
         messages:
           - text: Bring your creation to life in Codespace! This is where your project starts to take shape.
-          - text: Navigate to the root directory of your [project repository](${user.repository}) where all the main files are located.
+          - text: :instruction[[Open your Codespace dev enviroment](https://app.wilco.gg/my-codespace)], navigate to the root directory of your project repository where all the main files are located.
           - text: ":instruction[Open the `docker-compose.yml`] file in your project. This file contains the configuration for your Docker containers."
-          - text: "Edit the environmental variables: FORGE_CLIENT_ID and FORGE_CLIENT_SECRET. Replace them with your newly created application Client ID and Client Secret. These variables are crucial for the authentication and authorization of your app."
+          - text: "Edit the environmental variables: `FORGE_CLIENT_ID` and `FORGE_CLIENT_SECRET`. Replace them with your newly created application `Client ID` and `Client Secret`. These variables are crucial for the authentication and authorization of your app."
           - text: Save the changes you made to the `docker-compose.yml` file to ensure the new configurations are applied.
           - text: ":instruction[Launch your app by writing `docker-compose up`] in your terminal, and witness its wonders! Your app should now be running with the updated configurations."
     - actionId: ready_message
