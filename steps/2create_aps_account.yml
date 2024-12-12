@@ -1,4 +1,4 @@
-id: create_aps_account
+id: 2create_aps_account
 learningObjectives:
   - Create an Autodesk Platform Services account.
 hints:
@@ -22,4 +22,8 @@ trigger:
   type: user_ready_response
   flowNode:
     do:
+      - actionId: store_user_property
+        params:
+          name: autodeskaps
+          value: "https://aps.autodesk.com/"
       - actionId: finish_step

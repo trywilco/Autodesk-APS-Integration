@@ -1,4 +1,4 @@
-id: configure_url_api
+id: 5configure_url_api
 learningObjectives:
   - Configure URLs and enable required APIs.
 hints:
@@ -11,7 +11,9 @@ startFlow:
         person: lucca
         messages:
           - text: It's fine-tuning time! We will configure URLs and enable the required APIs for your app.
-          - text: Visit app settings on Autodesk Platform Services. Navigate to the settings section where you can manage your app configurations.
+          - text: Visit app settings on Autodesk Platform Services. Navigate to the general settings section where you can manage your app configuration.
+          - text: Now we want to configure the callback url to point to your Codespace URL. :instruction[You can go to the “Ports” tab in your Codespaces instance and see the url of your running app]
+          - text: "!(https://res.cloudinary.com/wilco/image/upload/v1728390389/ports_small_d6syvp.png)"
           - text: Set the Callback URL to (your app url)/api/auth/callback. This URL will be used for OAuth authentication callbacks.
           - text: Enable all necessary APIs for optimal functionality. Review the APIs your app needs and enable them in the settings.
           - text: Save your configurations to sync changes. Ensure all changes are saved to apply the new settings.

@@ -1,4 +1,4 @@
-id: execute_validate_bim360
+id: 6execute_validate_bim360
 learningObjectives:
   - Execute and validate BIM 360 workflows.
 hints:
@@ -6,6 +6,10 @@ hints:
   - Ensure the BIM 360 folder is correctly configured for monitoring.
 startFlow:
   do:
+    - actionId: store_user_property
+      params:
+        name: autodeskbim360
+        value: "https://www.autodesk.com/bim-360/"
     - actionId: bot_message
       params:
         person: lucca

@@ -15,13 +15,22 @@ skills:
   - Automation
   - API Management
 steps:
-  - motivation_autodesk_integration
-  - create_aps_account
-  - generate_app_credentials
-  - run_configure_codespace
-  - configure_url_api
-  - execute_validate_bim360
+  - 1motivation_autodesk_integration
+  - 2create_aps_account
+  - 3generate_app_credentials
+  - 4run_configure_codespace
+  - 5configure_url_api
+  - 6execute_validate_bim360
 type: PROMPT
+sidebarTools:
+  - name: Autodesk APS
+    link: ${user.properties.autodeskaps}
+    visible: ${!!user.properties.autodeskaps}
+    icon: apsicon.png
+  - name: Autodesk BIM360
+    link: ${user.properties.autodeskbim360}
+    visible: ${!!user.properties.autodeskbim360}
+    icon: bim360icon.png
 repository: https://github.com/Autodesk-Forge/forge-createwebhooks-skeleton
 frameworks:
   backend:
